@@ -8,7 +8,7 @@ global:
 
   datacenter:
     cloudProvider: aws
-    storageClassName: gp2
+    storageClassName: gp3-csi
     region: us-east-2
     clustername: cluster
     domain: mc-ztna-hh.ete14.res.ibm.com
