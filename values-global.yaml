@@ -11,7 +11,7 @@ global:
     storageClassName: gp3-csi
     region: us-east-2
     clustername: cluster
-    domain: mc-ztna-hh.ete14.res.ibm.com
+    domain: mc-ztna-hh-01.ete14.res.ibm.com
 
   xraylab:
     namespace: "xraylab-1"
