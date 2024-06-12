@@ -67,7 +67,6 @@ podman run -it --rm --pull=newer \
 	-e EXTRA_HELM_OPTS \
 	-e EXTRA_PLAYBOOK_OPTS \
 	-e KUBECONFIG \
-	-v "${PKI_HOST_MOUNT}":/etc/pki:ro \
 	-v "${HOME}":"${HOME}" \
 	-v "${HOME}":/pattern-home \
 	${PODMAN_ARGS} \
@@ -75,3 +74,5 @@ podman run -it --rm --pull=newer \
 	-w "$(pwd)" \
 	"$PATTERN_UTILITY_CONTAINER" \
 	$@
+
+#-v "${PKI_HOST_MOUNT}":/etc/pki:ro \
